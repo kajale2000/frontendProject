@@ -1,0 +1,47 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+    <h2>Intern List</h2>
+</div>
+<div class="panel-body">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>intern-id</th>
+                <th>First-Name</th>
+                <th>Last-Name</th>
+                <th>Email-Id</th>
+                <th>Phone-Number</th>
+                <th>Qualification</th>
+                <th>Location</th>
+                <th>UserName</th>
+                <th>PassWord</th>
+                <th>MaritalStatus</th>
+                
+            </tr>
+        </thead>
+    <tbody>
+<tr *ngFor="let i of intern | async ">
+    <td>{{i.id}}</td>
+    <td>{{i.firstName}}</td>
+    <td>{{i.lastName}}</td>
+    <td>{{i.email}}</td>
+    <td>{{i.phoneNumber}}</td>
+    <td>{{i.qualification}}</td>
+    <td>{{i.location}}</td>
+    <td>{{i.userName}}</td>
+    <td>{{i.password}}</td>
+    <td>{{i.marital_status}}</td>
+    <td>
+    <button (click)="internDetails(i.id)" class="btn btn-info" style="margin-left: 10px;">Details</button>
+     <!-- <button (click)="updateDetails(i.id)" class="btn btn-info" style="margin-left: 10px;">Edit</button>  -->
+    <button (click)="internDelete(i.id)" class="btn btn-info" style="margin-left: 10px;">Delete</button>
+    </td>
+</tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+
+
+

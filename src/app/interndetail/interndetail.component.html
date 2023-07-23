@@ -1,0 +1,46 @@
+<h2>Intern Details</h2>
+<hr>
+<div class="main">
+ 
+    <div *ngIf="interns">
+
+        <div>
+            <label><b>intern id :</b></label>{{interns.id}}
+        </div>
+        <div>
+            <label><b>intern firstName :</b></label>{{interns.firstName}}
+        </div><br>
+
+        <div>
+            <label><b>intern lastName :</b></label>{{interns.lastName}}
+        </div><br>
+        <div>
+            <label><b>intern email :</b></label>{{interns.email}}
+        </div><br>
+        <div>
+            <label><b>intern phoneNumber :</b></label>{{interns.phoneNumber}}
+        </div><br>
+        <div>
+            <label><b>intern qualification :</b></label>{{interns.qualification}}
+        </div><br>
+        <div>
+            <label><b>intern Location :</b></label>{{interns.location}}
+        </div><br>
+        <div>
+            <label><b>intern userName :</b></label>{{interns.userName}}
+        </div><br>
+        <div>
+            <label><b>intern password :</b></label>{{interns.password}}
+        </div><br>
+        <div>
+            <label><b>intern marital_status :</b></label>{{interns.marital_status}}
+        </div>
+
+        <button (click)="listIntern()" class="btn btn-primary">Back To List</button>
+
+    </div>
+
+
+</div>
+
+
